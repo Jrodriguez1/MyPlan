@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/searchback" >
+
+    <TextView
+        android:id="@+id/hehehe"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignLeft="@+id/searchInputBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="                               " />
+
+    <EditText
+        android:id="@+id/searchInputBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textColor="@drawable/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hehehe" 
+        android:ems="10" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchInputBox" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textResultInTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@drawable/white"
+                android:layout_marginTop="10dp"
+                android:text="标题中含有搜索内容的备忘..." />
+
+            <LinearLayout
+                android:id="@+id/resultInTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textResultInTitle"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textResultInContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/white"
+                android:layout_below="@+id/resultInTitle"
+                android:layout_marginTop="20dp"
+                android:text="内容中含有搜索内容的备忘。。。" />
+
+            <LinearLayout
+                android:id="@+id/resultInContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textResultInContent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+     <RelativeLayout
+         android:id="@+id/searchBottomLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/backdown" >
+
+        <Button
+            android:id="@+id/backBtn2"
+            android:layout_width="45sp"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

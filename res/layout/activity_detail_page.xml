@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mainBodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/detail"
+        android:paddingLeft="20sp"
+        android:paddingTop="20sp"
+        android:paddingRight="20sp" >
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备忘标题" 
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/detailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截止日期" 
+            android:layout_below="@+id/detailTitle" />
+
+        <TextView
+            android:id="@+id/detailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备忘内容" 
+            android:layout_below="@+id/detailDate" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backdown" >
+
+        <Button
+            android:id="@+id/returnBtn"
+            android:layout_width="40sp"
+            android:layout_height="35sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit" />
+
+         <Button
+             android:id="@+id/alarmBtn"
+             android:layout_width="45sp"
+             android:layout_height="45sp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@drawable/alarm"
+             android:layout_marginRight="20dp"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
